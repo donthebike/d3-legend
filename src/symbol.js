@@ -114,7 +114,7 @@ export default function symbol() {
         return `translate(0, ${height + i * shapePadding} )`
       }
       textTrans = (d, i) => `translate( ${maxW + labelOffset},
-              ${shapeSize[i].y + shapeSize[i].height / 2 + 5})`
+              ${shapeSize[i].y + shapeSize[i].height})`
     } else if (orient === "horizontal") {
       cellTrans = (d, i) => `translate( ${i * (maxW + shapePadding)},0)`
       textTrans = (d, i) => `translate( ${shapeSize[i].width * textAlign +

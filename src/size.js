@@ -138,7 +138,7 @@ export default function size() {
       }
 
       textTrans = (d, i) => `translate( ${maxW + labelOffset},
-          ${shapeSize[i].y + shapeSize[i].height / 2 + 5})`
+          ${shapeSize[i].y + shapeSize[i].height})`
     } else if (orient === "horizontal") {
       cellTrans = (d, i) => {
         const width = sum(shapeSize.slice(0, i), d => d.width)

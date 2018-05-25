@@ -135,7 +135,7 @@ export default function color() {
       textTrans = (d, i) =>
         `translate( ${shapeSize[i].width +
           shapeSize[i].x +
-          labelOffset}, ${shapeSize[i].y + shapeSize[i].height / 2 + 5})`
+          labelOffset}, ${shapeSize[i].y + shapeSize[i].height})`
     } else if (orient === "horizontal") {
       cellTrans = (d, i) =>
         `translate(${i * (shapeSize[i].width + shapePadding)},0)`
